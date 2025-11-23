@@ -37,7 +37,7 @@ html {
 
 .section-title {
   text-align: center;
-  font-size: 36px;
+  font-size: var(--section-title-size);
   font-weight: bold;
   margin-bottom: 20px;
   color: #1a1a1a;
@@ -45,7 +45,7 @@ html {
 
 .section-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--section-subtitle-size);
   color: #666;
   margin-bottom: 60px;
   letter-spacing: 2px;

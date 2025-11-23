@@ -5,9 +5,9 @@
     <ExpertSection />
     <ShowroomSection />
     <StatisticsSection />
-    <CooperationSection />
+    <!-- <CooperationSection /> -->
     <GallerySection />
-    <CaseStudySection />
+    <!-- <CaseStudySection /> -->
   </div>
 </template>
 

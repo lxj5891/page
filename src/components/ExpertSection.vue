@@ -1,21 +1,26 @@
 <template>
   <section class="expert section">
     <div class="container">
-      <h2 class="section-title">世界级讲师专人</h2>
-      <p class="section-subtitle">WORLD-CLASS LECTURER</p>
+      <h2 class="section-title">建联助力明星达人</h2>
+      <p class="section-subtitle">STAR SUPPORT</p>
       
       <div class="expert-grid">
         <div class="expert-card" v-for="expert in experts" :key="expert.id">
           <div class="expert-image">
             <img :src="expert.image" :alt="expert.name">
-            <div class="expert-overlay">
-              <button class="view-profile">查看详情</button>
-            </div>
+           
           </div>
           <div class="expert-info">
             <h3>{{ expert.name }}</h3>
-            <p>{{ expert.title }}</p>
           </div>
+        </div>
+      </div>
+
+      <div class="expert-map-bg">
+        <img src="../image/star-map.png" alt="Star Map">
+        <div class="expert-map-txt">
+          <p>淘宝、快手、小红书、拼多多、视频号、</p>
+          <p>抖音、美团、百度、本地同城等</p>
         </div>
       </div>
     </div>
@@ -30,27 +35,23 @@ export default {
       experts: [
         {
           id: 1,
-          name: '张教授',
-          title: '人工智能专家',
-          image: 'https://via.placeholder.com/300x350/4A90E2/ffffff?text=Expert+1'
+          name: '钟丽缇',
+          image: '../src/image/start-1.png'
         },
         {
           id: 2,
-          name: '李博士',
-          title: '大数据分析师',
-          image: 'https://via.placeholder.com/300x350/5B9BD5/ffffff?text=Expert+2'
+          name: '薛之谦',
+          image: '../src/image/start-2.png'
         },
         {
           id: 3,
-          name: '王总监',
-          title: '技术架构师',
-          image: 'https://via.placeholder.com/300x350/70AD47/ffffff?text=Expert+3'
+          name: '郝劭文',
+          image: '../src/image/start-3.png'
         },
         {
           id: 4,
-          name: '刘经理',
-          title: '产品运营专家',
-          image: 'https://via.placeholder.com/300x350/FFC000/ffffff?text=Expert+4'
+          name: '张大奕',
+          image: '../src/image/start-4.png'
         }
       ]
     }
@@ -59,6 +60,37 @@ export default {
 </script>
 
 <style scoped>
+
+.expert-map-bg {
+  position: relative;
+  width: 100%;
+  margin: -150px auto 0;
+  z-index: 0;
+}
+
+.expert-map-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.expert-map-txt {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  z-index: 88;
+  color: #fff;
+  background: rgba(21, 57, 150, 0.9);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.expert-map-txt p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+}
+
 .expert {
   background: #ffffff;
 }
@@ -69,6 +101,7 @@ export default {
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  z-index: 88;
 }
 
 .expert-card {
@@ -77,6 +110,7 @@ export default {
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 88;
 }
 
 .expert-card:hover {
@@ -87,7 +121,7 @@ export default {
 .expert-image {
   position: relative;
   overflow: hidden;
-  height: 350px;
+  height: 182px;
 }
 
 .expert-image img {

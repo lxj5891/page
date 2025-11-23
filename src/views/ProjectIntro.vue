@@ -15,14 +15,15 @@
         <p class="section-subtitle">Project Introduction</p>
         
         <div class="intro-content">
-          <h3 class="intro-heading">2025首创共享新模式</h3>
-          <p class="intro-description">全程真人录音互动 AIGC辅助直播</p>
+          <h3 class="intro-heading">2025首创卖货新模式</h3>
+          <p class="intro-description">全程真人实互动     AIGC辅助直播</p>
           
           <div class="features-grid">
             <div class="feature-card" v-for="feature in features" :key="feature.id">
               <div class="feature-number">{{ feature.number }}</div>
               <h4 class="feature-title">{{ feature.title }}</h4>
               <p class="feature-desc">{{ feature.description }}</p>
+              <p class="feature-desc1">{{ feature.description1 }}</p>
               <div class="feature-image">
                 <img :src="feature.image" :alt="feature.title">
               </div>
@@ -36,13 +37,14 @@
     <section class="section aigc-section">
       <div class="container">
         <h2 class="section-title">AIGC直播间实时翻译</h2>
-        <p class="section-subtitle">我们让直播语言不再是障碍直播间</p>
+        <p class="section-subtitle">我们让直播语言不再是直播障碍</p>
         
         <div class="aigc-grid">
           <div class="aigc-card" v-for="item in aigcFeatures" :key="item.id">
             <div class="aigc-number">{{ item.number }}</div>
             <h4 class="aigc-title">{{ item.title }}</h4>
             <p class="aigc-desc">{{ item.description }}</p>
+            <p class="aigc-desc1">{{ item.description1 }}</p>
             <div class="aigc-image">
               <img :src="item.image" :alt="item.title">
             </div>
@@ -51,35 +53,6 @@
       </div>
     </section>
 
-    <!-- Company Info Section -->
-    <section class="section company-section">
-      <div class="container">
-        <div class="company-grid">
-          <div class="company-info">
-            <h3 class="company-name">源回塔（杭州）科技有限公司</h3>
-            <div class="company-details">
-              <div class="detail-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>浙江省杭州市江干区钱江新城14号楼7层</span>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-envelope"></i>
-                <span>1048754672@qq.com</span>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-phone"></i>
-                <span>183-8102-5419</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="company-qr">
-            <img src="https://via.placeholder.com/200x200/4A90E2/ffffff?text=QR+Code" alt="QR Code">
-            <p>源回塔官方公众号</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -92,46 +65,52 @@ export default {
         {
           id: 1,
           number: '01',
-          title: '远程云端解决方案',
-          description: '解决不了解海外市场与平台的问题，让卖家不用去海外就能做好跨境电商',
-          image: 'https://via.placeholder.com/400x300/4A90E2/ffffff?text=Remote+Solution'
+          title: '远程云端算力分发',
+          description: '兼职主播在家即可分发千家万户',
+          description1: '小白报名考核通过即可远程上岗',
+          image: '/src/image/project/project-1-1.png'
         },
         {
           id: 2,
           number: '02',
-          title: '千万万户',
-          description: '全程真人录音互动AIGC辅助直播，为卖家提供一个AI助手，不再需要大量人力成本',
-          image: 'https://via.placeholder.com/400x300/5B9BD5/ffffff?text=Millions+Users'
+          title: '千家万户',
+          description: '全民账号通过系统即可参与直播',
+          description1: '解决家庭副业收入快速分享裂变',
+          image: '/src/image/project/project-1-2.png'
         },
         {
           id: 3,
           number: '03',
           title: '供应链',
-          description: '在源头产地建设100个供应链基地，在全球各地建设100个海外仓，实现全球供应链',
-          image: 'https://via.placeholder.com/400x300/70AD47/ffffff?text=Supply+Chain'
+          description: '优质供应链瞬间1000直播间在线',
+          description1: '品宣曝光瞬间1000账号曝光百万次',
+          image: '/src/image/project/project-1-3.png'
         }
       ],
       aigcFeatures: [
         {
           id: 1,
           number: '01',
-          title: '实时翻译器',
-          description: '支持多达175种语言和口音的实时翻译，让你的直播间无障碍沟通',
-          image: 'https://via.placeholder.com/400x300/6C5CE7/ffffff?text=Real-time+Translation'
+          title: '短视频翻译',
+          description: '刷短视频实时翻译 短视作工具',
+          description1: '短剧出海多角色不同声音翻译配音',
+          image: '/src/image/project/project-2-1.jpg'
         },
         {
           id: 2,
           number: '02',
           title: '实时翻译',
-          description: '通过AI技术实现多语言实时翻译，让全球用户都能理解你的直播内容',
-          image: 'https://via.placeholder.com/400x300/00B894/ffffff?text=AI+Translation'
+          description: '直播间主播翻译 连麦翻译',
+          description1: '弹幕翻译 社交通讯视频对话翻译',
+          image: '/src/image/project/project-2-2.jpg'
         },
         {
           id: 3,
           number: '03',
-          title: '标准TK直播培训',
-          description: '提供专业的TK直播培训，让卖家快速掌握直播技巧，提升直播效果',
-          image: 'https://via.placeholder.com/400x300/FD79A8/ffffff?text=TK+Training'
+          title: '跨境TK变现培训',
+          description: '线上基础入门课 线下实操课',
+          description1: '供应链海外仓和工具配备',
+          image: '/src/image/project/project-2-3.jpg'
         }
       ]
     }
@@ -251,7 +230,12 @@ export default {
   font-size: 15px;
   color: #666;
   line-height: 1.8;
-  margin-bottom: 20px;
+}
+
+.feature-desc1 {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.8;
 }
 
 .feature-image {
@@ -317,7 +301,12 @@ export default {
   font-size: 15px;
   color: #555;
   line-height: 1.8;
-  margin-bottom: 20px;
+}
+
+.aigc-desc1 {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
 }
 
 .aigc-image {

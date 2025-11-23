@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="nav">
         <div class="logo">
-          <img src="https://via.placeholder.com/120x40/4A90E2/ffffff?text=LOGO" alt="Logo">
+          <img src="../image/logo.png" alt="Logo">
         </div>
         <ul class="nav-menu">
           <li><router-link to="/">首页</router-link></li>
@@ -14,8 +14,8 @@
           <li><router-link to="/product-download">产品下载</router-link></li>
         </ul>
         <div class="nav-icons">
-          <i class="fas fa-search"></i>
-          <i class="fas fa-globe"></i>
+          <!-- <i class="fas fa-search"></i>
+          <i class="fas fa-globe"></i> -->
         </div>
       </nav>
     </div>
@@ -82,7 +82,7 @@ export default {
 .nav-menu :deep(a) {
   text-decoration: none;
   color: #333;
-  font-size: 15px;
+  font-size: var(--nav-font-size);
   font-weight: 500;
   transition: color 0.3s;
   position: relative;
