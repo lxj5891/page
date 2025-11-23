@@ -5,17 +5,18 @@
         <div class="logo">
           <img src="https://via.placeholder.com/120x40/4A90E2/ffffff?text=LOGO" alt="Logo">
         </div>
-        <ul class="nav-menu">
-          <li><router-link to="/">首页</router-link></li>
-          <li><router-link to="/project-intro">项目介绍</router-link></li>
-          <li><router-link to="/technical-support">技术支持</router-link></li>
-          <li><router-link to="/business-cooperation">商务合作</router-link></li>
-          <li><router-link to="/about-us">关于我们</router-link></li>
-          <li><router-link to="/product-download">产品下载</router-link></li>
+        <ul class="nav-menu" :class="{ 'active': mobileMenuOpen }">
+          <li><router-link to="/" @click="closeMobileMenu">首页</router-link></li>
+          <li><router-link to="/project-intro" @click="closeMobileMenu">项目介绍</router-link></li>
+          <li><router-link to="/technical-support" @click="closeMobileMenu">技术支持</router-link></li>
+          <li><router-link to="/business-cooperation" @click="closeMobileMenu">商务合作</router-link></li>
+          <li><router-link to="/about-us" @click="closeMobileMenu">关于我们</router-link></li>
+          <li><router-link to="/product-download" @click="closeMobileMenu">产品下载</router-link></li>
         </ul>
         <div class="nav-icons">
           <i class="fas fa-search"></i>
           <i class="fas fa-globe"></i>
+          <i class="fas fa-bars mobile-menu-toggle" @click="toggleMobileMenu"></i>
         </div>
       </nav>
     </div>
@@ -27,7 +28,8 @@ export default {
   name: 'Header',
   data() {
     return {
-      isScrolled: false
+      isScrolled: false,
+      mobileMenuOpen: false
     }
   },
   mounted() {
@@ -39,6 +41,12 @@ export default {
   methods: {
     handleScroll() {
       this.isScrolled = window.scrollY > 50
+    },
+    toggleMobileMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen
+    },
+    closeMobileMenu() {
+      this.mobileMenuOpen = false
     }
   }
 }
@@ -128,8 +136,47 @@ export default {
   color: #4A90E2;
 }
 
+.mobile-menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    padding: 15px 30px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-menu a::after,
+  .nav-menu :deep(a)::after {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block !important;
+    font-size: 24px;
+  }
+
+  .nav-icons .fa-search,
+  .nav-icons .fa-globe {
     display: none;
   }
 }
