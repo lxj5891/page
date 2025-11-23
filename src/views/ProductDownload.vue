@@ -149,35 +149,6 @@
       </div>
     </div>
 
-    <!-- Contact Section -->
-    <section class="section contact-section">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3 class="contact-title">鹊回塔（杭州）科技有限公司</h3>
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>浙江省杭州市江干区钱江新城14号楼507室</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>1046754672@qq.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>153-8102-5719</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="contact-qr">
-            <img src="https://via.placeholder.com/200x200/4A90E2/ffffff?text=QR+Code" alt="QR Code">
-            <p>鹊啦播官方公众号</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 

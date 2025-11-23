@@ -13,16 +13,13 @@
       <div class="container">
         <div class="content-layout">
           <div class="content-image">
-            <img src="https://via.placeholder.com/600x400/4A90E2/ffffff?text=Technical+Support" alt="全方位提供支持服务">
+            <img src="/src/image/support/1.jpg" alt="全方位提供支持服务">
           </div>
           <div class="content-text">
             <h2 class="section-title-left">全方位提供支持服务</h2>
             <p class="section-description">产品使用指导技术问题解答</p>
             <div class="feature-list">
-              <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <span>7x24小时在线技术支持</span>
-              </div>
+             
               <div class="feature-item">
                 <i class="fas fa-check-circle"></i>
                 <span>专业团队快速响应</span>
@@ -67,19 +64,11 @@
                   <p>提供专线电话支持，一对一解决技术难题</p>
                 </div>
               </div>
-              <div class="response-item">
-                <div class="response-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="response-content">
-                  <h4>邮件工单系统</h4>
-                  <p>提交工单后1小时内响应，全程跟踪处理进度</p>
-                </div>
-              </div>
+           
             </div>
           </div>
           <div class="content-image">
-            <img src="https://via.placeholder.com/600x400/5B9BD5/ffffff?text=Quick+Response" alt="极速服务应答">
+            <img src="/src/image/support/2.png" alt="极速服务应答">
           </div>
         </div>
       </div>
@@ -90,7 +79,7 @@
       <div class="container">
         <div class="content-layout">
           <div class="content-image">
-            <img src="https://via.placeholder.com/600x400/70AD47/ffffff?text=Customer+First" alt="客户需求为先">
+            <img src="/src/image/support/3.png" alt="客户需求为先">
           </div>
           <div class="content-text">
             <h2 class="section-title-left">客户需求为先</h2>
@@ -153,42 +142,12 @@
             </div>
           </div>
           <div class="content-image">
-            <img src="https://via.placeholder.com/600x400/FFC000/ffffff?text=Security" alt="落地有保障">
+            <img src="/src/image/support/4.png" alt="落地有保障">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section contact-section">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3 class="contact-title">源回塔（杭州）科技有限公司</h3>
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>浙江省杭州市江干区钱江新城14号楼7层</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>1048754672@qq.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <span>183-8102-5419</span>
-              </div>
-            </div>
-            <button class="contact-button">联系我们</button>
-          </div>
-          
-          <div class="contact-qr">
-            <img src="https://via.placeholder.com/200x200/4A90E2/ffffff?text=QR+Code" alt="QR Code">
-            <p>源回塔官方公众号</p>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 

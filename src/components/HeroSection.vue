@@ -1,10 +1,6 @@
 <template>
   <section class="hero" id="home">
-    <div class="hero-background">
-      <div class="cloud cloud-1"></div>
-      <div class="cloud cloud-2"></div>
-      <div class="cloud cloud-3"></div>
-    </div>
+    <div class="hero-background"></div>
     <div class="container">
       <div class="hero-content fade-in-up">
         <h1 class="hero-title">全球首创共享新模式</h1>
@@ -45,39 +41,12 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, #a8c0ff 0%, #c5d9f7 50%, #e8f0ff 100%);
+  background-image: url('../image/banner-top.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.cloud {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 100px;
-  animation: float 20s infinite ease-in-out;
-}
-
-.cloud-1 {
-  width: 200px;
-  height: 60px;
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
-}
-
-.cloud-2 {
-  width: 300px;
-  height: 80px;
-  top: 40%;
-  right: 15%;
-  animation-delay: 3s;
-}
-
-.cloud-3 {
-  width: 250px;
-  height: 70px;
-  bottom: 30%;
-  left: 20%;
-  animation-delay: 6s;
-}
 
 .hero-content {
   text-align: center;
@@ -87,7 +56,7 @@ export default {
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: var(--hero-title-size);
   font-weight: bold;
   margin-bottom: 20px;
   color: #1a1a1a;
@@ -95,7 +64,7 @@ export default {
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: var(--hero-subtitle-size);
   margin-bottom: 40px;
   color: #333;
   letter-spacing: 3px;
@@ -109,7 +78,7 @@ export default {
 
 .btn {
   padding: 15px 40px;
-  font-size: 16px;
+  font-size: var(--button-font-size);
   border: none;
   border-radius: 50px;
   cursor: pointer;

@@ -6,20 +6,16 @@
           <div class="footer-column">
             <h3>关于我们</h3>
             <ul>
-              <li><a href="#">公司简介</a></li>
-              <li><a href="#">企业文化</a></li>
-              <li><a href="#">发展历程</a></li>
-              <li><a href="#">荣誉资质</a></li>
+              <li><a href="#">鹉国播（杭州）科技有限公司</a></li>
             </ul>
           </div>
           
           <div class="footer-column">
             <h3>产品服务</h3>
             <ul>
-              <li><a href="#">智能解决方案</a></li>
-              <li><a href="#">云端服务</a></li>
-              <li><a href="#">数据分析</a></li>
-              <li><a href="#">技术支持</a></li>
+              <li>
+                <router-link to="/project-intro">项目介绍</router-link>
+              </li>
             </ul>
           </div>
           
@@ -27,18 +23,15 @@
             <h3>新闻资讯</h3>
             <ul>
               <li><a href="#">公司动态</a></li>
-              <li><a href="#">行业资讯</a></li>
-              <li><a href="#">媒体报道</a></li>
-              <li><a href="#">活动公告</a></li>
             </ul>
           </div>
           
           <div class="footer-column">
             <h3>联系我们</h3>
             <ul class="contact-info">
-              <li><i class="fas fa-phone"></i> 400-123-4567</li>
-              <li><i class="fas fa-envelope"></i> info@example.com</li>
-              <li><i class="fas fa-map-marker-alt"></i> 北京市朝阳区xxx大厦</li>
+              <li><i class="fas fa-phone"></i> 153-8102-5719</li>
+              <li><i class="fas fa-envelope"></i> 1046754672@qq.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> 浙江省杭州市余杭区航信科技园1号楼507室</li>
             </ul>
             <div class="social-links">
               <a href="#"><i class="fab fa-weixin"></i></a>
@@ -54,9 +47,9 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="footer-bottom-content">
-          <p>&copy; 2024 全球首创共享新模式. All Rights Reserved.</p>
+          <p>&copy; 2026 鹉国播（杭州）科技有限公司. All Rights Reserved.</p>
           <div class="footer-qr">
-            <img src="https://via.placeholder.com/100x100/4A90E2/ffffff?text=QR" alt="QR Code">
+            <img src="../image/qr.png" alt="QR Code">
             <span>扫码关注我们</span>
           </div>
         </div>

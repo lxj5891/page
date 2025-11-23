@@ -1,8 +1,8 @@
 <template>
   <section class="gallery section">
     <div class="container">
-      <h2 class="section-title">精彩瞬间</h2>
-      <p class="section-subtitle">WONDERFUL MOMENTS</p>
+      <h2 class="section-title">部分合作企业</h2>
+      <p class="section-subtitle">Some Cooperation Companies</p>
       
       <div class="gallery-tabs">
         <button 
@@ -17,9 +17,6 @@
       <div class="gallery-grid">
         <div class="gallery-item" v-for="item in filteredGallery" :key="item.id">
           <img :src="item.image" :alt="item.title">
-          <div class="gallery-overlay">
-            <i class="fas fa-search-plus"></i>
-          </div>
         </div>
       </div>
     </div>
@@ -34,19 +31,29 @@ export default {
       activeTab: 'all',
       tabs: [
         { id: 'all', name: '全部' },
-        { id: 'events', name: '活动' },
-        { id: 'products', name: '产品' },
-        { id: 'team', name: '团队' }
+        { id: 'cdjd', name: '成都基地' },
+        { id: 'zkly', name: '中科粮油' },
+        { id: 'mcpf', name: '米草破风' }
       ],
       gallery: [
-        { id: 1, category: 'events', title: '活动1', image: 'https://via.placeholder.com/400x300/4A90E2/ffffff?text=Event+1' },
-        { id: 2, category: 'products', title: '产品1', image: 'https://via.placeholder.com/400x300/5B9BD5/ffffff?text=Product+1' },
-        { id: 3, category: 'team', title: '团队1', image: 'https://via.placeholder.com/400x300/70AD47/ffffff?text=Team+1' },
-        { id: 4, category: 'events', title: '活动2', image: 'https://via.placeholder.com/400x300/FFC000/ffffff?text=Event+2' },
-        { id: 5, category: 'products', title: '产品2', image: 'https://via.placeholder.com/400x300/C55A11/ffffff?text=Product+2' },
-        { id: 6, category: 'team', title: '团队2', image: 'https://via.placeholder.com/400x300/E74C3C/ffffff?text=Team+2' },
-        { id: 7, category: 'events', title: '活动3', image: 'https://via.placeholder.com/400x300/9B59B6/ffffff?text=Event+3' },
-        { id: 8, category: 'products', title: '产品3', image: 'https://via.placeholder.com/400x300/3498DB/ffffff?text=Product+3' }
+        { id: 1, category: 'cdjd', title: '活动1', image: '/src/image/cd0.png' },
+        { id: 2, category: 'cdjd', title: '产品1', image: '/src/image/cd1.png' },
+        { id: 3, category: 'cdjd', title: '团队1', image: '/src/image/cd2.png' },
+        { id: 4, category: 'cdjd', title: '活动2', image: '/src/image/cd3.png' },
+        { id: 5, category: 'cdjd', title: '产品2', image: '/src/image/cd4.png' },
+        { id: 6, category: 'cdjd', title: '团队2', image: '/src/image/cd5.png' },
+        { id: 7, category: 'zkly', title: '中科粮油1', image: '/src/image/cp/zkly-1.png' },
+        { id: 8, category: 'zkly', title: '中科粮油2', image: '/src/image/cp/zkly-2.png' },
+        { id: 9, category: 'zkly', title: '中科粮油3', image: '/src/image/cp/zkly-3.png' },
+        { id: 9, category: 'zkly', title: '中科粮油3', image: '/src/image/cp/zkly-4.png' },
+        { id: 9, category: 'zkly', title: '中科粮油3', image: '/src/image/cp/zkly-5.png' },
+        { id: 9, category: 'zkly', title: '中科粮油3', image: '/src/image/cp/zkly-6.png' },
+        { id: 10, category: 'mcpf', title: '米草破风1', image: '/src/image/cp/mcpf-0.png' },
+        { id: 11, category: 'mcpf', title: '米草破风2', image: '/src/image/cp/mcpf-1.png' },
+        { id: 12, category: 'mcpf', title: '米草破风3', image: '/src/image/cp/mcpf-2.png' },
+        { id: 13, category: 'mcpf', title: '米草破风4', image: '/src/image/cp/mcpf-3.png' },
+        { id: 14, category: 'mcpf', title: '米草破风5', image: '/src/image/cp/mcpf-4.png' },
+        { id: 14, category: 'mcpf', title: '米草破风5', image: '/src/image/cp/mcpf-5.png' },
       ]
     }
   },
@@ -110,7 +117,7 @@ export default {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
-  height: 300px;
+  height: 208px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
